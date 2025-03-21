@@ -1,0 +1,34 @@
+[
+    {
+      "title": "E-Commerce Platform",
+      "description": "A full-stack e-commerce platform built with MERN stack, featuring user authentication, product management, and payment integration.",
+      "image": "https://images.unsplash.com/photo-1557821552-17105176677c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+      "technologies": ["React", "Node.js", "MongoDB", "Express", "Redux"],
+      "github": "https://github.com",
+      "demo": "https://demo.com"
+    },
+    {
+      "title": "Task Management App",
+      "description": "A collaborative task management application with real-time updates, drag-and-drop functionality, and team collaboration features.",
+      "image": "https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+      "technologies": ["React", "Node.js", "Socket.io", "MongoDB"],
+      "github": "https://github.com",
+      "demo": "https://demo.com"
+    },
+    {
+      "title": "Social Media Dashboard",
+      "description": "A comprehensive social media analytics dashboard with data visualization and reporting features.",
+      "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+      "technologies": ["React", "D3.js", "Node.js", "Express"],
+      "github": "https://github.com",
+      "demo": "https://demo.com"
+    },
+    {
+      "title": "Weather Forecast App",
+      "description": "A responsive weather application providing real-time forecasts using a public API, with a clean and intuitive UI.",
+      "image": "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+      "technologies": ["React", "Tailwind CSS", "API Integration"],
+      "github": "https://github.com",
+      "demo": "https://demo.com"
+    }
+  ]

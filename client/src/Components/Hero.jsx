@@ -19,7 +19,7 @@ const Hero = () => {
           >
             Hi, I'm{" "}
             <span className="bg-gradient-to-r from-purple-600 to-blue-500 bg-clip-text text-transparent">
-              Your Name
+              Yaswanth
             </span>
           </motion.h1>
 

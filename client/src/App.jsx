@@ -5,6 +5,7 @@ import Projects from "./Components/Projects";
 import Skills from "./Components/Skills";
 import Contact from "./Components/Contact";
 import Footer from "./components/Footer";
+import About from "./Components/About";
 import './index.css';
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
       <Navbar />
       <main className="min-h-screen bg-white dark:bg-gray-900">
         <Hero />
+        <About />
         <Projects />
         <Skills />
         <Contact />

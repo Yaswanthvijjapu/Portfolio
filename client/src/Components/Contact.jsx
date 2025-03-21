@@ -22,19 +22,19 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-20 bg-purple-50">
+    <section id="contact" className="py-24 bg-purple-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
           viewport={{ once: true }}
-          className="text-center mb-12"
+          className="text-center mb-16"
         >
-          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
+          <h2 className="text-3xl sm:text-5xl font-extrabold text-gray-900 mb-4 tracking-tight">
             Get in Touch
           </h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+          <p className="text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed">
             Have a question or want to work together? Feel free to reach out!
           </p>
         </motion.div>
@@ -46,10 +46,13 @@ const Contact = () => {
             transition={{ duration: 0.5, delay: 0.2 }}
             viewport={{ once: true }}
             onSubmit={handleSubmit}
-            className="space-y-6"
+            className="space-y-8"
           >
             <div>
-              <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">
+              <label
+                htmlFor="name"
+                className="block text-sm font-semibold text-gray-700 mb-2"
+              >
                 Name
               </label>
               <input
@@ -59,12 +62,18 @@ const Contact = () => {
                 value={formData.name}
                 onChange={handleChange}
                 required
-                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent"
+                className="w-full px-5 py-3 border border-gray-300 rounded-xl shadow-sm 
+                           focus:ring-2 focus:ring-purple-500 focus:border-transparent 
+                           transition-all duration-300 ease-in-out placeholder-gray-400"
+                placeholder="Your Name"
               />
             </div>
 
             <div>
-              <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">
+              <label
+                htmlFor="email"
+                className="block text-sm font-semibold text-gray-700 mb-2"
+              >
                 Email
               </label>
               <input
@@ -74,12 +83,18 @@ const Contact = () => {
                 value={formData.email}
                 onChange={handleChange}
                 required
-                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent"
+                className="w-full px-5 py-3 border border-gray-300 rounded-xl shadow-sm 
+                           focus:ring-2 focus:ring-purple-500 focus:border-transparent 
+                           transition-all duration-300 ease-in-out placeholder-gray-400"
+                placeholder="your.email@example.com"
               />
             </div>
 
             <div>
-              <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">
+              <label
+                htmlFor="message"
+                className="block text-sm font-semibold text-gray-700 mb-2"
+              >
                 Message
               </label>
               <textarea
@@ -88,8 +103,11 @@ const Contact = () => {
                 value={formData.message}
                 onChange={handleChange}
                 required
-                rows={4}
-                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent"
+                rows={5}
+                className="w-full px-5 py-3 border border-gray-300 rounded-xl shadow-sm 
+                           focus:ring-2 focus:ring-purple-500 focus:border-transparent 
+                           transition-all duration-300 ease-in-out placeholder-gray-400 resize-y"
+                placeholder="Write your message here..."
               />
             </div>
 
@@ -97,8 +115,9 @@ const Contact = () => {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               type="submit"
-              className="w-full bg-purple-600 text-white px-6 py-3 rounded-lg font-medium inline-flex items-center justify-center space-x-2
-                       hover:bg-purple-700 transition-colors duration-300"
+              className="w-full bg-purple-600 text-white px-8 py-3 rounded-xl font-semibold text-lg 
+                         inline-flex items-center justify-center space-x-3 shadow-md hover:shadow-lg 
+                         transition-all duration-300 ease-in-out"
             >
               <span>Send Message</span>
               <Send className="w-5 h-5" />
