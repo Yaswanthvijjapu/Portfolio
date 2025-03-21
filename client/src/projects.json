@@ -19,7 +19,7 @@
       "title": "Coded-pad",
       "description": "In CodedPad, you can add a name for your code snippet. If a snippet with that name already exists, it will redirect you to view the code. If not, it opens a code editor where you can create and save your code.",
       "image": "/images/Coded-pad.png",
-      "technologies": ["React", "D3.js", "Node.js", "Express"],
+      "technologies": ["React", "Node.js", "Express"],
       "github": "https://github.com/Yaswanthvijjapu/Coded-pad",
       "demo": "https://coded-pad-pied.vercel.app/"
     }
