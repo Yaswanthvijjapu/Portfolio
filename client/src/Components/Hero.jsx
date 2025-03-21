@@ -18,7 +18,7 @@ const Hero = () => {
           >
             Hi, I'm{" "}
             <span className="bg-gradient-to-r from-[#8B5CF6] to-[#3B82F6] bg-clip-text text-transparent">
-              Yaswanth
+              Yaswanth Vijjapu
             </span>
           </motion.h1>
 
@@ -28,7 +28,7 @@ const Hero = () => {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="text-xl sm:text-2xl text-[#6B7280] dark:text-[#9CA3AF] mb-8"
           >
-            Full Stack Developer | MERN Specialist | Problem Solver
+             MERN Stack Developer | Problem Solver
           </motion.h2>
 
           <motion.p

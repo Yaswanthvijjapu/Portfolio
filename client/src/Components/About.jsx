@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 
-const profilePhoto = 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80';
+const profilePhoto = 'https://images.unsplash.com/photo';
 
 const About = () => {
   const [ref, inView] = useInView({ triggerOnce: true, threshold: 0.1 });
@@ -48,7 +48,7 @@ const About = () => {
             className="max-w-lg text-left"
           >
             <p className="text-lg text-[#6B7280] dark:text-[#9CA3AF] mb-6 leading-relaxed">
-              Hi, I’m [Your Name], a full-stack developer with a love for building scalable, user-friendly applications. 
+              Hi, I'm Yaswanth, a full-stack developer with a love for building scalable, user-friendly applications. 
               With expertise in the MERN stack and a knack for problem-solving, I enjoy turning ideas into reality through code.
             </p>
             <p className="text-lg text-[#6B7280] dark:text-[#9CA3AF] leading-relaxed">
