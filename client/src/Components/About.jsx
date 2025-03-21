@@ -2,17 +2,13 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 
-// Replace this URL with your actual photo or a placeholder image
 const profilePhoto = 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80';
 
 const About = () => {
-  const [ref, inView] = useInView({
-    triggerOnce: true,
-    threshold: 0.1,
-  });
+  const [ref, inView] = useInView({ triggerOnce: true, threshold: 0.1 });
 
   return (
-    <section id="about" className="py-24 bg-gray-50 dark:bg-gray-900">
+    <section id="about" className="py-24 bg-[#F9FAFB] dark:bg-[#1F2937]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -21,10 +17,10 @@ const About = () => {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl sm:text-5xl font-extrabold text-gray-900 dark:text-white mb-4 tracking-tight">
+          <h2 className="text-4xl sm:text-5xl font-extrabold text-[#111827] dark:text-[#F3F4F6] mb-4 tracking-tight">
             About Me
           </h2>
-          <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-xl text-[#6B7280] dark:text-[#9CA3AF] max-w-3xl mx-auto leading-relaxed">
             A passionate developer crafting innovative solutions with modern technologies.
           </p>
         </motion.div>
@@ -51,11 +47,11 @@ const About = () => {
             viewport={{ once: true }}
             className="max-w-lg text-left"
           >
-            <p className="text-lg text-gray-700 dark:text-gray-200 mb-6 leading-relaxed">
+            <p className="text-lg text-[#6B7280] dark:text-[#9CA3AF] mb-6 leading-relaxed">
               Hi, I’m [Your Name], a full-stack developer with a love for building scalable, user-friendly applications. 
               With expertise in the MERN stack and a knack for problem-solving, I enjoy turning ideas into reality through code.
             </p>
-            <p className="text-lg text-gray-700 dark:text-gray-200 leading-relaxed">
+            <p className="text-lg text-[#6B7280] dark:text-[#9CA3AF] leading-relaxed">
               When I’m not coding, you can find me exploring new technologies, contributing to open-source projects, 
               or sipping coffee while brainstorming my next big idea.
             </p>

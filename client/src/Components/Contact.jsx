@@ -3,11 +3,7 @@ import { motion } from "framer-motion";
 import { Send } from "lucide-react";
 
 const Contact = () => {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    message: "",
-  });
+  const [formData, setFormData] = useState({ name: "", email: "", message: "" });
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -15,15 +11,12 @@ const Contact = () => {
   };
 
   const handleChange = (e) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value,
-    });
+    setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
   return (
-    <section id="contact" className="py-24 bg-purple-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="contact" className="py-24 bg-[#EDE9FE] dark:bg-[#4B5563]">
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -31,15 +24,15 @@ const Contact = () => {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-3xl sm:text-5xl font-extrabold text-gray-900 mb-4 tracking-tight">
+          <h2 className="text-3xl sm:text-5xl font-extrabold text-[#111827] dark:text-[#F3F4F6] mb-4 tracking-tight">
             Get in Touch
           </h2>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed">
+          <p className="text-xl text-[#6B7280] dark:text-[#9CA3AF] max-w-2xl mx-auto leading-relaxed">
             Have a question or want to work together? Feel free to reach out!
           </p>
         </motion.div>
 
-        <div className="max-w-2xl mx-auto">
+        <div className="max-w-xl mx-auto">
           <motion.form
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -51,7 +44,7 @@ const Contact = () => {
             <div>
               <label
                 htmlFor="name"
-                className="block text-sm font-semibold text-gray-700 mb-2"
+                className="block text-sm font-semibold text-[#111827] dark:text-[#F3F4F6] mb-2"
               >
                 Name
               </label>
@@ -63,8 +56,8 @@ const Contact = () => {
                 onChange={handleChange}
                 required
                 className="w-full px-5 py-3 border border-gray-300 rounded-xl shadow-sm 
-                           focus:ring-2 focus:ring-purple-500 focus:border-transparent 
-                           transition-all duration-300 ease-in-out placeholder-gray-400"
+                           focus:ring-2 focus:ring-[#8B5CF6] focus:border-transparent 
+                           transition-all duration-300 ease-in-out placeholder-[#6B7280] dark:bg-[#1F2937] dark:text-[#F3F4F6]"
                 placeholder="Your Name"
               />
             </div>
@@ -72,7 +65,7 @@ const Contact = () => {
             <div>
               <label
                 htmlFor="email"
-                className="block text-sm font-semibold text-gray-700 mb-2"
+                className="block text-sm font-semibold text-[#111827] dark:text-[#F3F4F6] mb-2"
               >
                 Email
               </label>
@@ -84,8 +77,8 @@ const Contact = () => {
                 onChange={handleChange}
                 required
                 className="w-full px-5 py-3 border border-gray-300 rounded-xl shadow-sm 
-                           focus:ring-2 focus:ring-purple-500 focus:border-transparent 
-                           transition-all duration-300 ease-in-out placeholder-gray-400"
+                           focus:ring-2 focus:ring-[#8B5CF6] focus:border-transparent 
+                           transition-all duration-300 ease-in-out placeholder-[#6B7280] dark:bg-[#1F2937] dark:text-[#F3F4F6]"
                 placeholder="your.email@example.com"
               />
             </div>
@@ -93,7 +86,7 @@ const Contact = () => {
             <div>
               <label
                 htmlFor="message"
-                className="block text-sm font-semibold text-gray-700 mb-2"
+                className="block text-sm font-semibold text-[#111827] dark:text-[#F3F4F6] mb-2"
               >
                 Message
               </label>
@@ -105,8 +98,8 @@ const Contact = () => {
                 required
                 rows={5}
                 className="w-full px-5 py-3 border border-gray-300 rounded-xl shadow-sm 
-                           focus:ring-2 focus:ring-purple-500 focus:border-transparent 
-                           transition-all duration-300 ease-in-out placeholder-gray-400 resize-y"
+                           focus:ring-2 focus:ring-[#8B5CF6] focus:border-transparent 
+                           transition-all duration-300 ease-in-out placeholder-[#6B7280] dark:bg-[#1F2937] dark:text-[#F3F4F6] resize-y"
                 placeholder="Write your message here..."
               />
             </div>
@@ -115,7 +108,7 @@ const Contact = () => {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               type="submit"
-              className="w-full bg-purple-600 text-white px-8 py-3 rounded-xl font-semibold text-lg 
+              className="w-full bg-[#8B5CF6] text-white px-8 py-3 rounded-xl font-semibold text-lg 
                          inline-flex items-center justify-center space-x-3 shadow-md hover:shadow-lg 
                          transition-all duration-300 ease-in-out"
             >

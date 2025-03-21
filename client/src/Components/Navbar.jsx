@@ -42,7 +42,7 @@ const Navbar = () => {
     <nav
       className={`fixed w-full z-50 transition-all duration-500 ease-in-out ${
         scrolled
-          ? "bg-white/90 dark:bg-gray-900/90 backdrop-blur-lg shadow-md"
+          ? "bg-[#F9FAFB]/90 dark:bg-[#1F2937]/90 backdrop-blur-lg shadow-md"
           : "bg-transparent"
       }`}
     >
@@ -55,7 +55,7 @@ const Navbar = () => {
             className="flex-shrink-0 cursor-pointer"
             onClick={() => scrollTo("home")}
           >
-            <span className="text-3xl font-extrabold bg-gradient-to-r from-purple-600 to-blue-500 bg-clip-text text-transparent tracking-tight">
+            <span className="text-3xl font-extrabold bg-gradient-to-r from-[#8B5CF6] to-[#3B82F6] bg-clip-text text-transparent tracking-tight">
               Portfolio
             </span>
           </motion.div>
@@ -67,7 +67,7 @@ const Navbar = () => {
                   key={item}
                   whileHover={{ scale: 1.1, y: -2 }}
                   whileTap={{ scale: 0.95 }}
-                  className="text-gray-700 dark:text-gray-300 hover:text-purple-600 dark:hover:text-purple-400 
+                  className="text-[#6B7280] dark:text-[#9CA3AF] hover:text-[#8B5CF6] 
                              font-semibold text-lg transition-all duration-300 ease-in-out"
                   onClick={() => scrollTo(item.toLowerCase())}
                 >
@@ -80,7 +80,7 @@ const Navbar = () => {
           <div className="hidden md:flex items-center space-x-6">
             <button
               onClick={toggleDarkMode}
-              className="p-2 rounded-full text-gray-700 dark:text-gray-300 hover:text-purple-600 dark:hover:text-purple-400 
+              className="p-2 rounded-full text-[#6B7280] dark:text-[#9CA3AF] hover:text-[#8B5CF6] 
                          transition-all duration-300 ease-in-out transform hover:scale-110"
             >
               {darkMode ? <Sun className="w-6 h-6" /> : <Moon className="w-6 h-6" />}
@@ -90,14 +90,14 @@ const Navbar = () => {
           <div className="md:hidden flex items-center space-x-4">
             <button
               onClick={toggleDarkMode}
-              className="p-2 rounded-full text-gray-700 dark:text-gray-300 hover:text-purple-600 dark:hover:text-purple-400 
+              className="p-2 rounded-full text-[#6B7280] dark:text-[#9CA3AF] hover:text-[#8B5CF6] 
                          transition-all duration-300 ease-in-out"
             >
               {darkMode ? <Sun className="w-6 h-6" /> : <Moon className="w-6 h-6" />}
             </button>
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="text-gray-700 dark:text-gray-300 hover:text-purple-600 dark:hover:text-purple-400 
+              className="text-[#6B7280] dark:text-[#9CA3AF] hover:text-[#8B5CF6] 
                          transition-all duration-300 ease-in-out"
             >
               {isOpen ? <X className="h-7 w-7" /> : <Menu className="h-7 w-7" />}
@@ -106,21 +106,20 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Mobile menu */}
       {isOpen && (
         <motion.div
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.3 }}
-          className="md:hidden bg-white/95 dark:bg-gray-900/95 backdrop-blur-lg shadow-lg"
+          className="md:hidden bg-[#F9FAFB]/95 dark:bg-[#1F2937]/95 backdrop-blur-lg shadow-lg"
         >
           <div className="px-4 pt-4 pb-6 space-y-2">
             {["Home", "About", "Projects", "Skills", "Contact"].map((item) => (
               <button
                 key={item}
-                className="block w-full text-left px-4 py-3 text-gray-700 dark:text-gray-300 hover:text-purple-600 
-                           dark:hover:text-purple-400 font-medium text-lg transition-all duration-300 ease-in-out 
-                           hover:bg-gray-100 dark:hover:bg-gray-800 rounded-lg"
+                className="block w-full text-left px-4 py-3 text-[#6B7280] dark:text-[#9CA3AF] hover:text-[#8B5CF6] 
+                           font-medium text-lg transition-all duration-300 ease-in-out 
+                           hover:bg-gray-100 dark:hover:bg-[#4B5563] rounded-lg"
                 onClick={() => scrollTo(item.toLowerCase())}
               >
                 {item}

@@ -5,10 +5,7 @@ import { Github, ExternalLink } from 'lucide-react';
 import projectsData from '../projects.json';
 
 const ProjectCard = ({ project, index }) => {
-  const [ref, inView] = useInView({
-    triggerOnce: true,
-    threshold: 0.1,
-  });
+  const [ref, inView] = useInView({ triggerOnce: true, threshold: 0.1 });
 
   return (
     <motion.div
@@ -16,7 +13,7 @@ const ProjectCard = ({ project, index }) => {
       initial={{ opacity: 0, y: 50 }}
       animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
       transition={{ duration: 0.6, delay: index * 0.2, ease: "easeOut" }}
-      className="bg-white rounded-2xl shadow-md overflow-hidden transform hover:-translate-y-2 
+      className="bg-white dark:bg-[#1F2937] rounded-2xl shadow-md overflow-hidden transform hover:-translate-y-2 
                  transition-all duration-500 ease-in-out hover:shadow-xl"
     >
       <div className="relative h-56 overflow-hidden">
@@ -27,14 +24,14 @@ const ProjectCard = ({ project, index }) => {
         />
       </div>
       <div className="p-6">
-        <h3 className="text-2xl font-bold text-gray-900 mb-3 tracking-tight">{project.title}</h3>
-        <p className="text-gray-600 mb-4 leading-relaxed text-base">{project.description}</p>
+        <h3 className="text-2xl font-bold text-[#111827] dark:text-[#F3F4F6] mb-3 tracking-tight">{project.title}</h3>
+        <p className="text-[#6B7280] dark:text-[#9CA3AF] mb-4 leading-relaxed text-base">{project.description}</p>
         <div className="flex flex-wrap gap-2 mb-5">
           {project.technologies.map((tech) => (
             <span
               key={tech}
-              className="px-3 py-1 bg-purple-100 text-purple-600 rounded-full text-sm font-medium 
-                         transition-colors duration-300 hover:bg-purple-200"
+              className="px-3 py-1 bg-[#EDE9FE] dark:bg-[#4B5563] text-[#8B5CF6] rounded-full text-sm font-medium 
+                         transition-colors duration-300 hover:bg-[#D8D6FE]"
             >
               {tech}
             </span>
@@ -45,7 +42,7 @@ const ProjectCard = ({ project, index }) => {
             href={project.github}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center space-x-2 text-gray-600 hover:text-purple-600 
+            className="flex items-center space-x-2 text-[#6B7280] dark:text-[#9CA3AF] hover:text-[#8B5CF6] 
                        transition-all duration-300 ease-in-out transform hover:scale-105"
           >
             <Github className="w-5 h-5" />
@@ -55,7 +52,7 @@ const ProjectCard = ({ project, index }) => {
             href={project.demo}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center space-x-2 text-gray-600 hover:text-purple-600 
+            className="flex items-center space-x-2 text-[#6B7280] dark:text-[#9CA3AF] hover:text-[#8B5CF6] 
                        transition-all duration-300 ease-in-out transform hover:scale-105"
           >
             <ExternalLink className="w-5 h-5" />
@@ -69,7 +66,7 @@ const ProjectCard = ({ project, index }) => {
 
 const Projects = () => {
   return (
-    <section id="projects" className="py-24 bg-gray-50">
+    <section id="projects" className="py-24 bg-[#F9FAFB] dark:bg-[#1F2937]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -78,10 +75,10 @@ const Projects = () => {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl sm:text-5xl font-extrabold text-gray-900 mb-4 tracking-tight">
+          <h2 className="text-4xl sm:text-5xl font-extrabold text-[#111827] dark:text-[#F3F4F6] mb-4 tracking-tight">
             Featured Projects
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-xl text-[#6B7280] dark:text-[#9CA3AF] max-w-3xl mx-auto leading-relaxed">
             Here are some of my recent projects that showcase my skills and experience in web development.
           </p>
         </motion.div>
