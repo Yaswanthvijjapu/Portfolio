@@ -1,5 +1,5 @@
 import React from "react";
-import { Github, Linkedin, Mail, Heart } from "lucide-react";
+import { FaGithub, FaLinkedin, FaEnvelope, FaHeart } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -14,7 +14,7 @@ const Footer = () => {
               className="text-[#6B7280] dark:text-[#9CA3AF] hover:text-[#8B5CF6] 
                          transform hover:scale-110 transition-all duration-300 ease-in-out"
             >
-              <Github className="w-7 h-7" />
+              <FaGithub className="w-7 h-7" />
             </a>
             <a
               href="https://www.linkedin.com/in/yaswanth-vijjapu-2572a7291"
@@ -23,20 +23,20 @@ const Footer = () => {
               className="text-[#6B7280] dark:text-[#9CA3AF] hover:text-[#8B5CF6] 
                          transform hover:scale-110 transition-all duration-300 ease-in-out"
             >
-              <Linkedin className="w-7 h-7" />
+              <FaLinkedin className="w-7 h-7" />
             </a>
             <a
               href="mailto:yaswanthvijjapu799@gmail.com"
               className="text-[#6B7280] dark:text-[#9CA3AF] hover:text-[#8B5CF6] 
                          transform hover:scale-110 transition-all duration-300 ease-in-out"
             >
-              <Mail className="w-7 h-7" />
+              <FaEnvelope className="w-7 h-7" />
             </a>
           </div>
 
           <div className="flex items-center text-[#111827] dark:text-[#F3F4F6] font-medium text-lg mb-4">
             <span>Made with</span>
-            <Heart className="w-5 h-5 mx-2 text-red-500 animate-pulse" />
+            <FaHeart className="w-5 h-5 mx-2 text-red-500 animate-pulse" />
             <span>by Yaswanth</span>
           </div>
 
