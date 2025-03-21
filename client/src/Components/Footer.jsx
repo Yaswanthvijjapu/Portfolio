@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="flex flex-col items-center">
           <div className="flex space-x-8 mb-6">
             <a
-              href="https://github.com"
+              href="https://github.com/Yaswanthvijjapu"
               target="_blank"
               rel="noopener noreferrer"
               className="text-[#6B7280] dark:text-[#9CA3AF] hover:text-[#8B5CF6] 
@@ -17,7 +17,7 @@ const Footer = () => {
               <Github className="w-7 h-7" />
             </a>
             <a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/yaswanth-vijjapu-2572a7291"
               target="_blank"
               rel="noopener noreferrer"
               className="text-[#6B7280] dark:text-[#9CA3AF] hover:text-[#8B5CF6] 
@@ -26,7 +26,7 @@ const Footer = () => {
               <Linkedin className="w-7 h-7" />
             </a>
             <a
-              href="mailto:your.email@example.com"
+              href="mailto:yaswanthvijjapu799@gmail.com"
               className="text-[#6B7280] dark:text-[#9CA3AF] hover:text-[#8B5CF6] 
                          transform hover:scale-110 transition-all duration-300 ease-in-out"
             >

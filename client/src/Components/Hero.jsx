@@ -49,7 +49,7 @@ const Hero = () => {
             className="mb-8 flex justify-center space-x-6"
           >
             <a
-              href="https://github.com/yourusername" // Replace with your GitHub URL
+              href="https://github.com/Yaswanthvijjapu" // Replace with your GitHub URL
               target="_blank"
               rel="noopener noreferrer"
               className="text-[#6B7280] dark:text-[#9CA3AF] hover:text-[#8B5CF6] dark:hover:text-[#8B5CF6] 
@@ -58,7 +58,7 @@ const Hero = () => {
               <Github className="w-7 h-7" />
             </a>
             <a
-              href="https://linkedin.com/in/yourusername" // Replace with your LinkedIn URL
+              href="https://www.linkedin.com/in/yaswanth-vijjapu-2572a7291" // Replace with your LinkedIn URL
               target="_blank"
               rel="noopener noreferrer"
               className="text-[#6B7280] dark:text-[#9CA3AF] hover:text-[#8B5CF6] dark:hover:text-[#8B5CF6] 
@@ -67,7 +67,7 @@ const Hero = () => {
               <Linkedin className="w-7 h-7" />
             </a>
             <a
-              href="mailto:your.email@example.com" // Replace with your email
+              href="mailto:yaswanthvijjapu799@gmail.com" // Replace with your email
               className="text-[#6B7280] dark:text-[#9CA3AF] hover:text-[#8B5CF6] dark:hover:text-[#8B5CF6] 
                          transition-all duration-300 ease-in-out transform hover:scale-110"
             >
