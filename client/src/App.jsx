@@ -8,8 +8,8 @@ import Contact from "./Components/Contact";
 import Foot from "./Components/Foot";
 import About from "./Components/About";
 import Achievements from "./Components/Achievements";
-import AllProjects from "./Components/Allprojects";
 import './index.css';
+import Listpro from "./Components/Listpro";
 
 // Scroll to top on route change
 const ScrollToTop = () => {
@@ -42,7 +42,7 @@ function App() {
       <main className="min-h-screen bg-white dark:bg-[#1F2937]">
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/projects" element={<AllProjects />} />
+          <Route path="/projects" element={<Listpro />} />
         </Routes>
       </main>
       <Foot />
