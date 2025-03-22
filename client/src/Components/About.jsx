@@ -2,7 +2,8 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 
-const profilePhoto = 'https://images.unsplash.com/photo';
+const profilePhoto = 'https://images.unsplash.com/photo'; // Your profile photo URL
+const resumePdf = '/resume.pdf'; // Path to your resume in the public folder (adjust if hosted elsewhere)
 
 const About = () => {
   const [ref, inView] = useInView({ triggerOnce: true, threshold: 0.1 });
@@ -51,10 +52,20 @@ const About = () => {
               Hi, I'm Yaswanth, a full-stack developer with a love for building scalable, user-friendly applications. 
               With expertise in the MERN stack and a knack for problem-solving, I enjoy turning ideas into reality through code.
             </p>
-            <p className="text-lg text-[#6B7280] dark:text-[#9CA3AF] leading-relaxed">
+            <p className="text-lg text-[#6B7280] dark:text-[#9CA3AF] mb-6 leading-relaxed">
               When I’m not coding, you can find me exploring new technologies, contributing to open-source projects, 
               or sipping coffee while brainstorming my next big idea.
             </p>
+            <div className="text-center mt-6"> {/* Added wrapper div with text-center and mt-6 */}
+              <a
+                href={resumePdf}
+                download="Yaswanth_Vijjapu_Resume.pdf"
+                className="inline-block bg-[#8B5CF6] text-white px-6 py-2 rounded-full font-medium
+                           hover:bg-[#7C3AED] transition-all duration-300 transform hover:scale-105"
+              >
+                Download Resume
+              </a>
+            </div>
           </motion.div>
         </div>
       </div>

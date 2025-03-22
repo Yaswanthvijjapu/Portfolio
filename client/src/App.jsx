@@ -1,5 +1,5 @@
-import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import React, { useEffect } from "react";
+import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
 import Navbar from "./Components/Navbar";
 import Hero from "./Components/Hero";
 import Projects from "./Components/Projects";
@@ -11,9 +11,20 @@ import Achievements from "./Components/Achievements";
 import AllProjects from "./Components/Allprojects";
 import './index.css';
 
-// Home page component with reduced gaps
+// Scroll to top on route change
+const ScrollToTop = () => {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
+};
+
+// Home page component
 const Home = () => (
-  <div className="space-y-8"> {/* Added container with reduced spacing */}
+  <div className="space-y-8">
     <Hero />
     <About />
     <Projects />
@@ -26,6 +37,7 @@ const Home = () => (
 function App() {
   return (
     <Router>
+      <ScrollToTop /> {/* Add this component */}
       <Navbar />
       <main className="min-h-screen bg-white dark:bg-[#1F2937]">
         <Routes>

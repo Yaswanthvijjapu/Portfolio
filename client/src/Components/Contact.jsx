@@ -15,36 +15,36 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-24 bg-[#EDE9FE] dark:bg-[#4B5563]">
+    <section id="contact" className="py-12 bg-[#EDE9FE] dark:bg-[#4B5563]">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
           viewport={{ once: true }}
-          className="text-center mb-16"
+          className="text-center mb-8"
         >
-          <h2 className="text-3xl sm:text-5xl font-extrabold text-[#111827] dark:text-[#F3F4F6] mb-4 tracking-tight">
+          <h2 className="text-2xl sm:text-4xl font-extrabold text-[#111827] dark:text-[#F3F4F6] mb-3 tracking-tight">
             Get in Touch
           </h2>
-          <p className="text-xl text-[#6B7280] dark:text-[#9CA3AF] max-w-2xl mx-auto leading-relaxed">
+          <p className="text-lg text-[#6B7280] dark:text-[#9CA3AF] max-w-2xl mx-auto leading-relaxed">
             Have a question or want to work together? Feel free to reach out!
           </p>
         </motion.div>
 
-        <div className="max-w-xl mx-auto">
+        <div className="max-w-lg mx-auto"> {/* Reduced max-w-xl (32rem) to max-w-lg (28rem) */}
           <motion.form
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
             viewport={{ once: true }}
             onSubmit={handleSubmit}
-            className="space-y-8"
+            className="space-y-6"
           >
             <div>
               <label
                 htmlFor="name"
-                className="block text-sm font-semibold text-[#111827] dark:text-[#F3F4F6] mb-2"
+                className="block text-sm font-semibold text-[#111827] dark:text-[#F3F4F6] mb-1"
               >
                 Name
               </label>
@@ -55,7 +55,7 @@ const Contact = () => {
                 value={formData.name}
                 onChange={handleChange}
                 required
-                className="w-full px-5 py-3 border border-gray-300 rounded-xl shadow-sm 
+                className="w-full px-4 py-2 border border-gray-300 rounded-xl shadow-sm 
                            focus:ring-2 focus:ring-[#8B5CF6] focus:border-transparent 
                            transition-all duration-300 ease-in-out placeholder-[#6B7280] dark:bg-[#1F2937] dark:text-[#F3F4F6]"
                 placeholder="Your Name"
@@ -65,7 +65,7 @@ const Contact = () => {
             <div>
               <label
                 htmlFor="email"
-                className="block text-sm font-semibold text-[#111827] dark:text-[#F3F4F6] mb-2"
+                className="block text-sm font-semibold text-[#111827] dark:text-[#F3F4F6] mb-1"
               >
                 Email
               </label>
@@ -76,7 +76,7 @@ const Contact = () => {
                 value={formData.email}
                 onChange={handleChange}
                 required
-                className="w-full px-5 py-3 border border-gray-300 rounded-xl shadow-sm 
+                className="w-full px-4 py-2 border border-gray-300 rounded-xl shadow-sm 
                            focus:ring-2 focus:ring-[#8B5CF6] focus:border-transparent 
                            transition-all duration-300 ease-in-out placeholder-[#6B7280] dark:bg-[#1F2937] dark:text-[#F3F4F6]"
                 placeholder="your.email@example.com"
@@ -86,7 +86,7 @@ const Contact = () => {
             <div>
               <label
                 htmlFor="message"
-                className="block text-sm font-semibold text-[#111827] dark:text-[#F3F4F6] mb-2"
+                className="block text-sm font-semibold text-[#111827] dark:text-[#F3F4F6] mb-1"
               >
                 Message
               </label>
@@ -96,8 +96,8 @@ const Contact = () => {
                 value={formData.message}
                 onChange={handleChange}
                 required
-                rows={5}
-                className="w-full px-5 py-3 border border-gray-300 rounded-xl shadow-sm 
+                rows={4}
+                className="w-full px-4 py-2 border border-gray-300 rounded-xl shadow-sm 
                            focus:ring-2 focus:ring-[#8B5CF6] focus:border-transparent 
                            transition-all duration-300 ease-in-out placeholder-[#6B7280] dark:bg-[#1F2937] dark:text-[#F3F4F6] resize-y"
                 placeholder="Write your message here..."
@@ -108,12 +108,12 @@ const Contact = () => {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               type="submit"
-              className="w-full bg-[#8B5CF6] text-white px-8 py-3 rounded-xl font-semibold text-lg 
-                         inline-flex items-center justify-center space-x-3 shadow-md hover:shadow-lg 
+              className="w-full bg-[#8B5CF6] text-white px-6 py-2 rounded-xl font-semibold text-base 
+                         inline-flex items-center justify-center space-x-2 shadow-md hover:shadow-lg 
                          transition-all duration-300 ease-in-out"
             >
               <span>Send Message</span>
-              <Send className="w-5 h-5" />
+              <Send className="w-4 h-4" />
             </motion.button>
           </motion.form>
         </div>
