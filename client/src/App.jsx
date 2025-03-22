@@ -6,6 +6,7 @@ import Skills from "./Components/Skills";
 import Contact from "./Components/Contact";
 import Foot from "./Components/Foot";
 import About from "./Components/About";
+import Achievements from "./Components/Achievements";
 import './index.css';
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
         <About />
         <Projects />
         <Skills />
+        <Achievements />
         <Contact />
       </main>
       <Foot />

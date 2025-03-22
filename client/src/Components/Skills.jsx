@@ -3,23 +3,23 @@ import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import {
   FaReact, FaNodeJs, FaDatabase, FaServer, FaCode, FaCss3Alt,
-  FaGitAlt, FaDocker, FaAws
+  FaGitAlt, FaHtml5, FaPython, FaLeaf
 } from 'react-icons/fa';
-import { SiTypescript, SiNextdotjs, SiGraphql } from 'react-icons/si';
+import { SiNextdotjs } from 'react-icons/si';
 
 const skills = [
   { name: 'React', icon: <FaReact className="text-[#8B5CF6]" /> },
   { name: 'Node.js', icon: <FaNodeJs className="text-[#8B5CF6]" /> },
-  { name: 'MongoDB', icon: <FaDatabase className="text-[#8B5CF6]" /> },
+  { name: 'MongoDB', icon: <FaLeaf className="text-[#8B5CF6]" /> },
   { name: 'Express', icon: <FaServer className="text-[#8B5CF6]" /> },
-  { name: 'TypeScript', icon: <SiTypescript className="text-[#8B5CF6]" /> },
-  { name: 'Tailwind CSS', icon: <FaCss3Alt className="text-[#8B5CF6]" /> },
+  { name: 'HTML', icon: <FaHtml5 className="text-[#8B5CF6]" /> },
+  { name: 'CSS', icon: <FaCss3Alt className="text-[#8B5CF6]" /> },
+  { name: 'SQL', icon: <FaDatabase className="text-[#8B5CF6]" /> },
+  { name: 'Python', icon: <FaPython className="text-[#8B5CF6]" /> },
   { name: 'C++', icon: <FaCode className="text-[#8B5CF6]" /> },
   { name: 'Git', icon: <FaGitAlt className="text-[#8B5CF6]" /> },
   { name: 'Next.js', icon: <SiNextdotjs className="text-[#8B5CF6]" /> },
-  { name: 'GraphQL', icon: <SiGraphql className="text-[#8B5CF6]" /> },
-  { name: 'Docker', icon: <FaDocker className="text-[#8B5CF6]" /> },
-  { name: 'AWS', icon: <FaAws className="text-[#8B5CF6]" /> },
+  { name: 'Tailwind CSS', icon: <FaCss3Alt className="text-[#8B5CF6]" /> },
 ];
 
 const SkillCard = ({ skill, index }) => {
