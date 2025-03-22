@@ -1,9 +1,9 @@
-// FeaturedProjects.jsx
+// AllProjects.jsx
 import React from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { Github, ExternalLink } from 'lucide-react';
-import { Link } from 'react-router-dom'; // Assuming you're using react-router
+import { Link } from 'react-router-dom'; // Add this import
 import projectsData from '../projects.json';
 
 const ProjectCard = ({ project, index }) => {
@@ -66,11 +66,9 @@ const ProjectCard = ({ project, index }) => {
   );
 };
 
-const Projects = () => {
-  const featuredProjects = projectsData.slice(0, 3); // Show only first 3 projects
-
+const AllProjects = () => {
   return (
-    <section id="projects" className="py-24 bg-[#F9FAFB] dark:bg-[#1F2937]">
+    <section className="py-24 bg-[#F9FAFB] dark:bg-[#1F2937] min-h-screen">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -80,26 +78,26 @@ const Projects = () => {
           className="text-center mb-16"
         >
           <h2 className="text-4xl sm:text-5xl font-extrabold text-[#111827] dark:text-[#F3F4F6] mb-4 tracking-tight">
-            Featured Projects
+            All Projects
           </h2>
           <p className="text-xl text-[#6B7280] dark:text-[#9CA3AF] max-w-3xl mx-auto leading-relaxed">
-            Here are some of my recent projects that showcase my skills and experience in web development.
+            A complete collection of my web development projects.
           </p>
         </motion.div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
-          {featuredProjects.map((project, index) => (
+          {projectsData.map((project, index) => (
             <ProjectCard key={project.title} project={project} index={index} />
           ))}
         </div>
 
         <div className="text-center mt-12">
           <Link
-            to="/projects"
+            to="/"
             className="inline-block px-8 py-3 bg-[#8B5CF6] text-white rounded-full text-lg font-medium
                        hover:bg-[#7C3AED] transition-all duration-300 transform hover:scale-105 hover:shadow-lg"
           >
-            Show More Projects
+            Back to Home
           </Link>
         </div>
       </div>
@@ -107,4 +105,4 @@ const Projects = () => {
   );
 };
 
-export default Projects;
+export default AllProjects;

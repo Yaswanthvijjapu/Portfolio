@@ -45,24 +45,24 @@ const SkillCard = ({ skill, index }) => {
 
 const Skills = () => {
   return (
-    <section id="skills" className="py-20 bg-[#F9FAFB] dark:bg-[#1F2937]">
+    <section id="skills" className="py-12 bg-[#F9FAFB] dark:bg-[#1F2937]"> {/* Reduced py-20 to py-12 */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
           viewport={{ once: true }}
-          className="text-center mb-12"
+          className="text-center mb-8" // Reduced mb-12 to mb-8
         >
-          <h2 className="text-4xl sm:text-5xl font-extrabold text-[#111827] dark:text-[#F3F4F6] mb-4 tracking-tight">
+          <h2 className="text-3xl sm:text-4xl font-extrabold text-[#111827] dark:text-[#F3F4F6] mb-3 tracking-tight"> {/* Reduced text-4xl to text-3xl, sm:text-5xl to sm:text-4xl, mb-4 to mb-3 */}
             Technical Skills
           </h2>
-          <p className="text-xl text-[#6B7280] dark:text-[#9CA3AF] max-w-3xl mx-auto">
+          <p className="text-lg text-[#6B7280] dark:text-[#9CA3AF] max-w-3xl mx-auto"> {/* Reduced text-xl to text-lg */}
             I specialize in full-stack development with expertise in the MERN stack and modern web technologies.
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4"> {/* Reduced gap-6 to gap-4 */}
           {skills.map((skill, index) => (
             <SkillCard key={skill.name} skill={skill} index={index} />
           ))}

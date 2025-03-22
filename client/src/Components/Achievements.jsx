@@ -19,6 +19,10 @@ const achievements = [
     description: 'Max Rating: 1155',
     icon: <FaChartBar className="text-[#8B5CF6] text-4xl" />,
   },
+  // {
+  //   name: 'SIH Internal Hackathon Qualifier',
+  //   description: 'Successfully cleared the internal hackathon round of Smart India Hackathon (SIH) with an innovative team project.',
+  // }
 ];
 
 const AchievementCard = ({ achievement, index }) => {

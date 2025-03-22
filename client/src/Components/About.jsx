@@ -8,7 +8,7 @@ const About = () => {
   const [ref, inView] = useInView({ triggerOnce: true, threshold: 0.1 });
 
   return (
-    <section id="about" className="py-24 bg-[#F9FAFB] dark:bg-[#1F2937]">
+    <section id="about" className="py-5 bg-[#F9FAFB] dark:bg-[#1F2937]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
