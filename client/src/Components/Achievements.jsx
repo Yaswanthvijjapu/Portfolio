@@ -4,6 +4,7 @@ import { useInView } from 'react-intersection-observer';
 import { FaCode, FaTrophy, FaChartBar } from 'react-icons/fa';
 
 const achievements = [
+  
   {
     name: 'LeetCode',
     description: 'Solved 300+ problems | Top 12% in Contests',
