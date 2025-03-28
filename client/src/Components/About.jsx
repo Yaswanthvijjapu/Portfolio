@@ -56,7 +56,7 @@ const About = () => {
               When I’m not coding, you can find me exploring new technologies, contributing to open-source projects, 
               or sipping coffee while brainstorming my next big idea.
             </p>
-            <div className="text-center mt-6"> {/* Added wrapper div with text-center and mt-6 */}
+            {/* <div className="text-center mt-6">
               <a
                 href={resumePdf}
                 download="Yaswanth_Vijjapu_Resume.pdf"
@@ -65,7 +65,7 @@ const About = () => {
               >
                 Download Resume
               </a>
-            </div>
+            </div> */}
           </motion.div>
         </div>
       </div>
