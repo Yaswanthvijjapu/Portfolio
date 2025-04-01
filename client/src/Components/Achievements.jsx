@@ -12,7 +12,7 @@ const achievements = [
   },
   {
     name: 'CodeChef',
-    description: '3-Star Rating | Max Rating: 1615',
+    description: '3-Star Rating | Max Rating: 1602',
     icon: <FaTrophy className="text-[#8B5CF6] text-4xl" />,
   },
   {
