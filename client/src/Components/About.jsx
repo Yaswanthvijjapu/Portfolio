@@ -2,8 +2,8 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 
-const profilePhoto = 'https://images.unsplash.com/photo'; // Your profile photo URL
-const resumePdf = '/resume.pdf'; // Path to your resume in the public folder (adjust if hosted elsewhere)
+const profilePhoto = "./images/Myimg.jpg"; 
+const resumePdf = '/resume.pdf'; 
 
 const About = () => {
   const [ref, inView] = useInView({ triggerOnce: true, threshold: 0.1 });
@@ -28,18 +28,18 @@ const About = () => {
 
         <div className="flex flex-col md:flex-row items-center justify-center gap-12">
           <motion.div
-            ref={ref}
-            initial={{ opacity: 0, scale: 0.9 }}
-            animate={inView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.9 }}
-            transition={{ duration: 0.6, ease: "easeOut" }}
-            className="w-72 h-72 md:w-96 md:h-96 rounded-full overflow-hidden shadow-lg"
-          >
-            <img
-              src={profilePhoto}
-              alt="Profile"
-              className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-500 ease-in-out"
-            />
-          </motion.div>
+          ref={ref}
+          initial={{ opacity: 0, scale: 0.9 }}
+          animate={inView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.9 }}
+          transition={{ duration: 0.6, ease: "easeOut" }}
+          className="w-56 h-56 md:w-72 md:h-72 rounded-full overflow-hidden shadow-lg"
+        >
+          <img
+            src={profilePhoto}
+            alt="Profile"
+            className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-500 ease-in-out"
+          />
+        </motion.div>
 
           <motion.div
             initial={{ opacity: 0, x: 50 }}
