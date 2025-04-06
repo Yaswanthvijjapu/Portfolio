@@ -9,6 +9,7 @@
         "ignore": [
           "-webkit-text-size-adjust",
           "color: color-mix(in oklab,currentColor 50%,transparent)"
+
         ]
       }
     ]
