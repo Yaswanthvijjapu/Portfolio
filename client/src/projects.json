@@ -22,5 +22,13 @@
       "technologies": ["React", "Node.js", "Express"],
       "github": "https://github.com/Yaswanthvijjapu/Coded-pad",
       "demo": "https://coded-pad-pied.vercel.app/"
+    },
+    {
+      "title": "Formify",
+      "description": "Formify allows you to create, customize, and manage forms with ease. Add a title for your form, and if it already exists, you’ll be redirected to edit it. If not, it opens a form editor where you can design fields (e.g., text, signature, dropdown), collect responses, and export data as CSV or PDF.",
+      "image": "/images/Formify.png",
+      "technologies": ["React", "Node.js", "Express", "MongoDB", "Tailwind CSS"],
+      "github": "https://github.com/Yaswanthvijjapu/Form",
+      "demo": "https://form-two-sand.vercel.app/"
     }
 ]
