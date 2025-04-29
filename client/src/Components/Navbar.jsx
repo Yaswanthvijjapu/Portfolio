@@ -75,18 +75,23 @@ const Navbar = () => {
 
           <div className="hidden md:block">
             <div className="ml-12 flex items-center space-x-10">
-              {["Home", "About", "Projects", "Skills", "Contact"].map((item) => (
-                <motion.button
-                  key={item}
-                  whileHover={{ scale: 1.1, y: -2 }}
-                  whileTap={{ scale: 0.95 }}
-                  className="text-[#6B7280] dark:text-[#9CA3AF] hover:text-[#8B5CF6] 
-                             font-semibold text-lg transition-all duration-300 ease-in-out"
-                  onClick={() => scrollTo(item.toLowerCase())}
-                >
-                  {item}
-                </motion.button>
-              ))}
+            {["Home", "About", "Projects", "Skills", "Blogs", "Contact"].map((item) => (
+              <motion.button
+                key={item}
+                whileHover={{ scale: 1.1, y: -2 }}
+                whileTap={{ scale: 0.95 }}
+                className="text-[#6B7280] dark:text-[#9CA3AF] hover:text-[#8B5CF6] 
+                          font-semibold text-lg transition-all duration-300 ease-in-out"
+                onClick={() =>
+                  item === "Blogs"
+                    ? window.location.href = "/blogs"
+                    : scrollTo(item.toLowerCase())
+                }
+              >
+                {item}
+              </motion.button>
+            ))}
+
             </div>
           </div>
 

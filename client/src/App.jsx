@@ -10,6 +10,8 @@ import About from "./Components/About";
 import Achievements from "./Components/Achievements";
 import './index.css';
 import Listpro from "./Components/Listpro";
+import BlogList from "./Components/Blogs";
+import BrowserOSBlogPage from "./Components/Blogs/BrowserOSBlogPage";
 
 
 
@@ -44,6 +46,8 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/projects" element={<Listpro />} />
+          <Route path="/blogs" element={<BlogList />} />
+          <Route path="/blog/browser-os" element={<BrowserOSBlogPage />} />
         </Routes>
       </main>
       <Foot />
