@@ -5,7 +5,7 @@ const blogs = [
   {
     id: "browser-os",
     title: "What if the Browser Becomes the OS? Exploring the Future of Web-Based Computing",
-    date: "April 29, 2025",
+    date: "April 30, 2025",
     author: "Yaswanth Vijjapu",
     path: "/blog/browser-os",
     tags: ["Web", "Cloud", "Future Tech"]
