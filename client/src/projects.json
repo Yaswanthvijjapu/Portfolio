@@ -30,5 +30,13 @@
       "technologies": ["React", "Node.js", "Express", "MongoDB", "Tailwind CSS"],
       "github": "https://github.com/Yaswanthvijjapu/Form",
       "demo": "https://form-two-sand.vercel.app/"
-    }
+    },
+    {
+    "title": "AI Code Reviewer",
+    "description": "An AI-driven code reviewer powered by Google Gemini. It provides instant feedback on code quality, performance, security, and best practices — perfect for learning, debugging, and improving code.",
+    "image": "/images/Code-Review.png",
+    "technologies": ["React", "Node.js", "Express", "Google Gemini API"],
+    "github": "https://github.com/Yaswanthvijjapu/review",
+    "demo": "https://code-review-khaki.vercel.app/"
+  }
 ]
