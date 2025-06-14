@@ -71,22 +71,27 @@ const Navbar = () => {
             </div>
           </div>
 
+          {/* Desktop dark mode toggle icon */}
           <div className="hidden md:flex items-center space-x-6">
             <button
               onClick={toggleDarkMode}
               className="p-2 rounded-full text-[#6B7280] dark:text-[#9CA3AF] hover:text-[#8B5CF6] transition-all duration-300 ease-in-out transform hover:scale-110"
             >
-              {darkMode ? <Sun className="w-6 h-6" /> : <Moon className="w-6 h-6" />}
+              {/* Toggle between Sun and Moon icons based on darkMode state */}
+              {/* {darkMode ? <Sun className="w-6 h-6" /> : <Moon className="w-6 h-6" />} */}
             </button>
           </div>
 
           <div className="md:hidden flex items-center space-x-4">
+            {/* Mobile dark mode toggle icon */}
             <button
               onClick={toggleDarkMode}
               className="p-2 rounded-full text-[#6B7280] dark:text-[#9CA3AF] hover:text-[#8B5CF6] transition-all duration-300 ease-in-out"
             >
-              {darkMode ? <Sun className="w-6 h-6" /> : <Moon className="w-6 h-6" />}
+              {/* Toggle between Sun and Moon icons based on darkMode state */}
+              {/* {darkMode ? <Sun className="w-6 h-6" /> : <Moon className="w-6 h-6" />} */}
             </button>
+
             <button
               onClick={() => setIsOpen(!isOpen)}
               className="text-[#6B7280] dark:text-[#9CA3AF] hover:text-[#8B5CF6] transition-all duration-300 ease-in-out"
